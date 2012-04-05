@@ -10,6 +10,9 @@ JavaScript complete script
     autocmd FileType javascript
       \ :setl omnifunc=jscomplete#CompleteJS
 
+- 主目的
+  - `.` や `[` 後のプロパティを補完する
+
 拡張
 ----
 
