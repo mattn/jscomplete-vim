@@ -2,16 +2,16 @@
 " vim: set fdm=marker:
 " Vim completion for DOM
 
-if exists('b:loaded_jscomplete_dom')
+if exists('b:loaded_jscomplete_moz')
   finish
 endif
-let b:loaded_jscomplete_dom = 1
+let b:loaded_jscomplete_moz = 1
 
 let s:save_cpo = &cpo
 set cpo&vim
 
 let s:MOZ = {
-  \   'Object':
+  \   'Object': {
   \     'prototype': {
   \       'toSource': {'kind': 'f', 'menu': '[Object.prototype]', 'type': 'String'}
   \     }
@@ -20,7 +20,7 @@ let s:MOZ = {
   \     'prototype': {
   \       'isGenerator': {'kind': 'f', 'menu': '[FUnction.prototype]', 'type': 'Boolean'}
   \     }
-  \   }
+  \   },
   \   'String': {
   \     'prototype': {
   \       'quote':     {'kind': 'f', 'menu': '[String.prototype]', 'type': 'String'},
